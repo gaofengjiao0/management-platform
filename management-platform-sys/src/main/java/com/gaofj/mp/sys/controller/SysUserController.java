@@ -23,6 +23,10 @@ public class SysUserController {
     @Resource
     private SysUserService sysUserService;
 
+    /**
+     * 查询所有用户
+     * @return
+     */
     @GetMapping("/all")
     public Map all(){
         Map<String,Object> map =new HashMap<>();
