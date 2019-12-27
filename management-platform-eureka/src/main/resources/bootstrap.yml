@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: management-platform-eureka  #需要从github上读取的资源名称，注意没有yml后缀名
+      profile: dev  #本次访问的配置项
+      label: master
+      uri: http://mp-config:5001  #本为服务启动后先去找config服务，通过management-platform-config获取github的服务地址

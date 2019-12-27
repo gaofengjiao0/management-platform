@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: management-platform-sys
+      profile: dev
+      label: master
+      uri:  http://mp-config:5001
