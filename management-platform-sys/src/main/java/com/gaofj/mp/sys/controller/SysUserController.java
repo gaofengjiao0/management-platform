@@ -37,6 +37,11 @@ public class SysUserController {
         return map;
     }
 
+    /**
+     * 新增用户
+     * @param sysUser
+     * @return
+     */
     @PostMapping("/add")
     public int add(SysUser sysUser){
         return this.sysUserService.addUser(sysUser);
